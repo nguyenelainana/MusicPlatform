@@ -10,6 +10,7 @@ const getLikedSongs = async (): Promise<Song[]> => {
     cookies: cookies,
   });
 
+  //getting session
   const {
     data: { session },
   } = await supabase.auth.getSession();
